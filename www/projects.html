@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kirsten.pl</title>
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/dist/main.css?id=0" />
+  </head>
+  <body class="mx-auto flex min-h-screen flex-col bg-slate-200">
+    <header class="sticky top-0 shadow-md">
+      <nav class="bg-sky-500">
+        <ul class="flex flex-row">
+          <li class="navbar-link flex-grow text-left md:hover:bg-sky-500">
+            <a href="/" class="pl-2">kirsten.pl</a>
+          </li>
+          <li id="burger" class="flex-grow-0 py-2 px-4">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </li>
+          <li class="">
+            <ul
+              id="navbar-links"
+              class="fixed top-12 left-0 hidden w-full flex-col bg-sky-500 md:relative md:top-0 md:flex md:w-fit md:flex-row"
+            >
+              <li class="navbar-link"><a href="/projects.html">projects</a></li>
+              <li class="navbar-link"><a href="/resume.html">résumé</a></li>
+              <li class="navbar-link"><a href="/links.html">links</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex-grow p-4 pb-0">
+      <ul
+        class="mx-auto grid max-w-6xl grid-cols-1 justify-center gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+      >
+        <li class="project-item bg-slate-100">
+          <img src="/images/space.jpg" alt="Thumbnail for agent-sim" />
+          <div class="p-4 pt-2">
+            <h2 class="">agent-sim</h2>
+            <p>
+              Agent-based simulation for infectious disease spread written in
+              Rust.
+            </p>
+          </div>
+        </li>
+        <li class="project-item bg-slate-100">
+          <img
+            src="/images/space2.jpg"
+            alt="Thumbnail for covid-wave-predictor"
+          />
+          <div class="p-4 pt-2">
+            <h2 class="">covid-wave-predictor</h2>
+            <p>
+              Simplified machine learning model for predicting COVID-19 waves in
+              the U.S. Winning entry into the UniHacks 2021 hackathon.
+            </p>
+          </div>
+        </li>
+        <li class="project-item bg-slate-100">
+          <img src="/images/space.jpg" alt="Thumbnail for Alpheratz in Rust" />
+          <div class="p-4 pt-2">
+            <h2 class="">Alpheratz in Rust</h2>
+            <p>
+              Agent-based simulation for infectious disease spread written in
+              Rust.
+            </p>
+          </div>
+        </li>
+        <li class="project-item bg-slate-100">
+          <img src="/images/space2.jpg" alt="Thumbnail for Supernova" />
+          <div class="p-4 pt-2">
+            <h2 class="">Supernova</h2>
+            <p>
+              Simplified machine learning model for predicting COVID-19 waves in
+              the U.S. Winning entry into the UniHacks 2021 hackathon.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer class="mt-4 bg-slate-100 p-2">
+      <p class="text-center text-sm">Copyright 2022 Kirsten Laskoski</p>
+    </footer>
+    <script>
+      const burger = document.getElementById("burger");
+      const links = document.getElementById("navbar-links");
+
+      burger.addEventListener("click", () => {
+        links.classList.toggle("active");
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          links.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
