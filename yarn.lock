@@ -718,6 +718,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kirsten.pl@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "kirsten.pl@workspace:."
+  dependencies:
+    prettier: 2.7.1
+    prettier-plugin-tailwindcss: ^0.1.13
+    rimraf: ^3.0.2
+    tailwindcss: ^3.2.1
+  languageName: unknown
+  linkType: soft
+
 "lilconfig@npm:^2.0.5, lilconfig@npm:^2.0.6":
   version: 2.0.6
   resolution: "lilconfig@npm:2.0.6"
@@ -1269,16 +1280,6 @@ __metadata:
   checksum: ba9c7cbbf2b7884696523450a61fee1a09930d888b7a8d7579025ad93d459b2d1949ee5bbfeb188b2be5f4ac163544c5e98491ad6152df34154feebc2cc337c1
   languageName: node
   linkType: hard
-
-"sentry-eagle.com@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "sentry-eagle.com@workspace:."
-  dependencies:
-    prettier: 2.7.1
-    prettier-plugin-tailwindcss: ^0.1.13
-    tailwindcss: ^3.2.1
-  languageName: unknown
-  linkType: soft
 
 "set-blocking@npm:^2.0.0":
   version: 2.0.0

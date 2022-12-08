@@ -34,7 +34,7 @@
   }
 
   .project-item {
-    @apply max-w-sm mx-auto overflow-hidden rounded-md shadow-md;
+    @apply mx-auto max-w-sm overflow-hidden rounded-md shadow-md;
   }
 
   .project-item > img {
