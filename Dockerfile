@@ -14,6 +14,10 @@ RUN yarn build:production
 
 FROM node:18-alpine as web
 
+LABEL org.opencontainers.image.source=https://github.com/tslnc04/kirsten.pl
+LABEL org.opencontainers.image.description="Next.js server for kirsten.pl"
+LABEL org.opencontainers.image.licenses=MIT
+
 RUN mkdir /app
 
 COPY --from=builder /app /app/
