@@ -82,3 +82,20 @@ jobs:
         # This step uses the identity token to provision an ephemeral certificate
         # against the sigstore community Fulcio instance.
         run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} cosign sign {}@${{ steps.build-and-push.outputs.digest }}
+
+      - name: DigitalOcean App Platform deployment
+        uses: digitalocean/app_action@v1.1.5 # replace this with current version from https://github.com/digitalocean/app_action/releases
+        with:
+          app_name: kirsten-pl
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          images: '[
+            {
+            "name": "tslnc04-kirsten-pl",
+            "image":{
+            "registry_type": "DOCKER_HUB",
+            "registry": "tslnc04",
+            "repository": "kirsten.pl",
+            "tag": "main"
+            }
+            }
+            ]'
