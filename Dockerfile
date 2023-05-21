@@ -11,6 +11,7 @@ RUN yarn install
 COPY . .
 
 RUN yarn build:production
+RUN yarn postbuild
 
 FROM node:18-alpine as web
 
