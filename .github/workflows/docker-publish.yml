@@ -7,7 +7,7 @@ name: Build and deploy production pushes
 
 on:
   push:
-    branches: ["dev"]
+    branches: ["main"]
 
 env:
   # Use docker.io for Docker Hub if empty
