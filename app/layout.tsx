@@ -13,15 +13,19 @@ export const metadata = {
   description: "Kirsten's website",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className={roboto.className}>
         <Header
           navigation={[
             { name: "Home", href: "/" },
-            { name: "Projects", href: "/projects" },
-            { name: "Blog", href: "/blog" },
+            { name: "Projects", href: "/projects/" },
+            { name: "Blog", href: "/blog/" },
           ]}
         ></Header>
         {children}

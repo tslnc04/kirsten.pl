@@ -18,7 +18,7 @@ export default function Button({
   return (
     <button
       type="button"
-      className={`${sizedClasses[size]} ${className} rounded font-medium text-fuchsia-600 shadow-sm hover:bg-fuchsia-500 hover:text-white outline outline-2 outline-fuchsia-600`}
+      className={`${sizedClasses[size]} ${className} rounded font-medium text-fuchsia-600 shadow-sm outline outline-2 outline-fuchsia-600 hover:bg-fuchsia-500 hover:text-white`}
     >
       {children}
     </button>

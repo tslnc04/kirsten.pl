@@ -4,6 +4,11 @@ const nextConfig = {
   poweredByHeader: false,
   trailingSlash: true,
   output: process.env.ENV === "production" ? "standalone" : undefined,
+  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  experimental: {
+    mdxRs: true,
+  },
 };
 
-module.exports = nextConfig;
+const withMDX = require("@next/mdx")();
+module.exports = withMDX(nextConfig);
