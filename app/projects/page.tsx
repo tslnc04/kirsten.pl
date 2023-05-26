@@ -4,6 +4,7 @@ import Link from "next/link";
 import kplImage from "@/public/images/kirsten.pl.png";
 import agentSimImage from "@/public/images/agent_sim.webp";
 import covidImage from "@/public/images/covid_wave_predictor.webp";
+import translationImage from "@/public/images/improved_translation.webp";
 
 export default function Projects() {
   const projects = [
@@ -27,6 +28,16 @@ export default function Projects() {
       year: "2022",
     },
     {
+      name: "Research in ML-based Translation",
+      description:
+        "Modified transformer model to show improvement in machine translation by using joint part of speech tagging.",
+      href: "https://docs.google.com/presentation/d/1d4kQMvbibbChr8m0QDW8ZPpK1D_hq7qyLnSneGN_TsQ/edit?usp=sharing",
+      image: translationImage,
+      imageAlt: "Slide disucssing Transformer model and changes",
+      techStack: ["Tensorflow", "NumPy", "Python"],
+      year: "2021",
+    },
+    {
       name: "Covid Wave Predictor",
       description:
         "Made for the 2021 UniHacks hackathon, this project predicts the likelihood of a Covid wave in a given area using a custom neural network.",
@@ -34,7 +45,7 @@ export default function Projects() {
       image: covidImage,
       imageAlt:
         "The Covid Wave Predictor homepage, with a map of Covid in the US broken down by county",
-      techStack: ["Tensorflow", "d3.js", "TopoJSON"],
+      techStack: ["Tensorflow", "Python", "d3.js", "TopoJSON"],
       year: "2021",
     },
     {
@@ -94,7 +105,7 @@ function Project({
       />
       <h2 className="mt-2 text-2xl font-medium">{name}</h2>
       <p className="mb-4 mt-2 text-lg">{description}</p>
-      <ul className="mt-auto flex items-center gap-2">
+      <ul className="mt-auto flex flex-wrap items-center gap-2">
         <li>{year} &middot;</li>
         {techStack.map((tech) => (
           <li
