@@ -33,15 +33,15 @@ export default function Home() {
         design and machine learning being favorite subjects of mine.
       </p>
       <p className="mt-4 text-xl">
-        I freelance for{" "}
+        I work for{" "}
+        <a href="https://zectonal.com" className="underline">
+          Zectonal
+        </a>{" "}
+        as a Rust developer and freelance for{" "}
         <a href="https://www.switchframe.co/" className="underline">
           SwitchFrame
         </a>{" "}
-        using Rust (plus some React) and work as a{" "}
-        <a href="https://its.unc.edu/resource/resnet/" className="underline">
-          ResNet Community Coordinator
-        </a>{" "}
-        at UNC.
+        using Rust (plus some React).
       </p>
       <h2 className="mb-2 mt-6 text-3xl font-bold">Links</h2>
       <div className="gird-cols-1 grid gap-x-4 gap-y-2 md:grid-cols-2">
