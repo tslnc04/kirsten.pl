@@ -26,7 +26,7 @@ export default function Home() {
         <a href="https://unc.edu" className="underline">
           UNC Chapel Hill
         </a>{" "}
-        studying mathematics, graduating in Decemeber 2023.
+        studying mathematics, graduating in December 2023.
       </p>
       <p className="mt-4 text-xl">
         Though I&apos;m studying math, I do software engineering, with compiler
@@ -34,14 +34,10 @@ export default function Home() {
       </p>
       <p className="mt-4 text-xl">
         I work for{" "}
-        <a href="https://zectonal.com" className="underline">
-          Zectonal
-        </a>{" "}
-        as a Rust developer and freelance for{" "}
         <a href="https://www.switchframe.co/" className="underline">
           SwitchFrame
         </a>{" "}
-        using Rust (plus some React).
+        as a backend video engineer.
       </p>
       <h2 className="mb-2 mt-6 text-3xl font-bold">Links</h2>
       <div className="gird-cols-1 grid gap-x-4 gap-y-2 md:grid-cols-2">
