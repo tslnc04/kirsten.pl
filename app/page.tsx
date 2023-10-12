@@ -33,11 +33,11 @@ export default function Home() {
         design and machine learning being favorite subjects of mine.
       </p>
       <p className="mt-4 text-xl">
-        I work for{" "}
+        I also work for{" "}
         <a href="https://www.switchframe.co/" className="underline">
           SwitchFrame
         </a>{" "}
-        as a backend video engineer.
+        as a backend video engineer with Rust.
       </p>
       <h2 className="mb-2 mt-6 text-3xl font-bold">Links</h2>
       <div className="gird-cols-1 grid gap-x-4 gap-y-2 md:grid-cols-2">
