@@ -33,7 +33,7 @@ export default function Home() {
         <a href="https://unc.edu" className="underline">
           UNC Chapel Hill
         </a>{" "}
-        with a bachelor's in mathematics.
+        with a bachelor&apos;s in mathematics.
       </p>
       <p className="mt-4 text-xl">
         Outside of video processing, I&apos;ve always held an interest in
