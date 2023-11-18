@@ -8,7 +8,7 @@ export default function Home() {
     },
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/kirsten-laskoski-363241112/",
+      href: "https://www.linkedin.com/in/kirsten-laskoski/",
     },
     { name: "GitHub", href: "https://github.com/tslnc04" },
     { name: "GitLab", href: "https://gitlab.com/tslnc04" },
@@ -22,22 +22,22 @@ export default function Home() {
         Hey! I&apos;m <span className="text-fuchsia-600">Kirsten</span>
       </h1>
       <p className="mt-4 text-xl">
-        I&apos;m currently a student at{" "}
-        <a href="https://unc.edu" className="underline">
-          UNC Chapel Hill
-        </a>{" "}
-        studying mathematics, graduating in December 2023.
-      </p>
-      <p className="mt-4 text-xl">
-        Though I&apos;m studying math, I do software engineering, with compiler
-        design and machine learning being favorite subjects of mine.
-      </p>
-      <p className="mt-4 text-xl">
-        I also work for{" "}
+        I work as a software engineer at{" "}
         <a href="https://www.switchframe.co/" className="underline">
           SwitchFrame
         </a>{" "}
-        as a backend video engineer with Rust.
+        , developing the video processing backend in Rust.
+      </p>
+      <p className="mt-4 text-xl">
+        I also recently graduated from{" "}
+        <a href="https://unc.edu" className="underline">
+          UNC Chapel Hill
+        </a>{" "}
+        with a bachelor's in mathematics.
+      </p>
+      <p className="mt-4 text-xl">
+        Outside of video processing, I&apos;ve always held an interest in
+        compilers and machine learning.
       </p>
       <h2 className="mb-2 mt-6 text-3xl font-bold">Links</h2>
       <div className="gird-cols-1 grid gap-x-4 gap-y-2 md:grid-cols-2">
