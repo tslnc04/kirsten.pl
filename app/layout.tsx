@@ -25,7 +25,7 @@ export default function RootLayout({
           navigation={[
             { name: "Home", href: "/" },
             { name: "Projects", href: "/projects/" },
-            { name: "Blog", href: "/blog/" },
+            // { name: "Blog", href: "/blog/" },
           ]}
         ></Header>
         {children}

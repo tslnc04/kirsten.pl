@@ -1,20 +1,41 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
-import kplImage from "@/public/images/kirsten.pl.png";
 import agentSimImage from "@/public/images/agent_sim.webp";
 import covidImage from "@/public/images/covid_wave_predictor.webp";
+import kplImage from "@/public/images/kirsten.pl.png";
+import nombriloImage from "@/public/images/nombrilo.png";
+import serveImage from "@/public/images/serve.png";
+import smathClassesImage from "@/public/images/smath_classes.png";
 import translationImage from "@/public/images/improved_translation.webp";
 
 export default function Projects() {
   const projects = [
+    {
+      name: "Nombrilo",
+      description: "Generate block distributions for Minecraft worlds. Uses custom serde support for NBT data.",
+      href: "https://github.com/tslnc04/nombrilo",
+      image: nombriloImage,
+      imageAlt: "Nombrilo README on GitHub",
+      techStack: ["Rust", "serde"],
+      year: "2024",
+    },
+    {
+      name: "serve",
+      description: "Simple file server with firewalld integration.",
+      href: "https://github.com/tslnc04/serve",
+      image: serveImage,
+      imageAlt: "serve README on GitHub",
+      techStack: ["Go", "firewalld"],
+      year: "2023",
+    },
     {
       name: "kirsten.pl",
       description: "This website! Built using Next.js and Tailwind CSS.",
       href: "https://github.com/tslnc04/kirsten.pl",
       image: kplImage,
       imageAlt: "The kirsten.pl homepage",
-      techStack: ["React", "Next.js", "Tailwind CSS"],
+      techStack: ["React", "Next.js", "Tailwind CSS", "Docker"],
       year: "2023",
     },
     {
@@ -28,12 +49,21 @@ export default function Projects() {
       year: "2022",
     },
     {
+      name: "smath-classes",
+      description: "Unofficial course catalog for the North Carolina School of Science and Mathematics.",
+      href: "https://github.com/tslnc04/smath-classes",
+      image: smathClassesImage,
+      imageAlt: "smath-classes homepage without classes loaded",
+      techStack: ["JavaScript", "Python"],
+      year: "2022",
+    },
+    {
       name: "Research in ML-based Translation",
       description:
         "Modified transformer model to show improvement in machine translation by using joint part of speech tagging.",
       href: "https://docs.google.com/presentation/d/1d4kQMvbibbChr8m0QDW8ZPpK1D_hq7qyLnSneGN_TsQ/edit?usp=sharing",
       image: translationImage,
-      imageAlt: "Slide disucssing Transformer model and changes",
+      imageAlt: "Slide discussing Transformer model and changes",
       techStack: ["Tensorflow", "NumPy", "Python"],
       year: "2021",
     },
@@ -48,16 +78,16 @@ export default function Projects() {
       techStack: ["Tensorflow", "Python", "d3.js", "TopoJSON"],
       year: "2021",
     },
-    {
-      name: "lasko.ski",
-      description:
-        "A website for my LLC. Currently doesn't exist, but I'm working on it!",
-      href: "/projects/",
-      image: kplImage,
-      imageAlt: "The lasko.ski homepage",
-      techStack: ["React", "Next.js", "Tailwind CSS"],
-      year: "2023",
-    },
+    // {
+    //   name: "lasko.ski",
+    //   description:
+    //     "A website for my LLC. Currently doesn't exist, but I'm working on it!",
+    //   href: "/projects/",
+    //   image: kplImage,
+    //   imageAlt: "The lasko.ski homepage",
+    //   techStack: ["React", "Next.js", "Tailwind CSS"],
+    //   year: "2023",
+    // },
   ];
 
   return (

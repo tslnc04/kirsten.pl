@@ -22,11 +22,11 @@ export default function Home() {
         Hey! I&apos;m <span className="text-fuchsia-600">Kirsten</span>
       </h1>
       <p className="mt-4 text-xl">
-        I work as a software engineer at{" "}
-        <a href="https://www.switchframe.co/" className="underline">
+        I work as a full stack software engineer at{" "}
+        <a href="https://www.switchframe.ai/" className="underline">
           SwitchFrame
-        </a>{" "}
-        , developing the video processing backend in Rust.
+        </a>
+        , doing everything from video processing to web development.
       </p>
       <p className="mt-4 text-xl">
         I also recently graduated from{" "}
@@ -36,8 +36,8 @@ export default function Home() {
         with a bachelor&apos;s in mathematics.
       </p>
       <p className="mt-4 text-xl">
-        Outside of video processing, I&apos;ve always held an interest in
-        compilers and machine learning.
+        Besides working on various projects in Rust, I&apos;m always trying to
+        learn Esperanto.
       </p>
       <h2 className="mb-2 mt-6 text-3xl font-bold">Links</h2>
       <div className="gird-cols-1 grid gap-x-4 gap-y-2 md:grid-cols-2">
