@@ -1,4 +1,4 @@
-import Button from "@/components/button";
+import Link from "next/link";
 
 export default function Home() {
   const links = [
@@ -42,11 +42,13 @@ export default function Home() {
       <h2 className="mb-2 mt-6 text-3xl font-bold">Links</h2>
       <div className="gird-cols-1 grid gap-x-4 gap-y-2 md:grid-cols-2">
         {links.map((link) => (
-          <a key={link.name} href={link.href}>
-            <Button size="xl" className="m-2 w-full">
-              {link.name}
-            </Button>
-          </a>
+          <Link
+            key={link.name}
+            href={link.href}
+            className={`text-md m-2 w-full rounded px-3.5 py-2.5 text-center font-medium text-fuchsia-600 shadow-sm outline outline-2 outline-fuchsia-600 hover:bg-fuchsia-500 hover:text-white`}
+          >
+            {link.name}
+          </Link>
         ))}
       </div>
     </main>

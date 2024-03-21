@@ -11,6 +11,13 @@ const roboto = Roboto({
 export const metadata = {
   title: "kirsten.pl",
   description: "Kirsten's website",
+  openGraph: {
+    title: "kirsten.pl",
+    description: "Kirsten's website",
+    type: "website",
+    locale: "en_US",
+    url: "https://kirsten.pl",
+  },
 };
 
 export default function RootLayout({
