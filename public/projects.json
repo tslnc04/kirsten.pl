@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Nombrilo",
+    "description": "Generate block distributions for Minecraft worlds. Uses custom serde support for NBT data.",
+    "href": "https://github.com/tslnc04/nombrilo",
+    "imagePath": "/public/images/nombrilo.png",
+    "imageAlt": "Nombrilo README on GitHub",
+    "techStack": ["Rust", "serde"],
+    "year": "2024"
+  },
+  {
+    "name": "serve",
+    "description": "Simple file server with firewalld integration.",
+    "href": "https://github.com/tslnc04/serve",
+    "imagePath": "/public/images/serve.png",
+    "imageAlt": "serve README on GitHub",
+    "techStack": ["Go", "firewalld"],
+    "year": "2023"
+  },
+  {
+    "name": "kirsten.pl",
+    "description": "This website! Built using Next.js and Tailwind CSS.",
+    "href": "https://github.com/tslnc04/kirsten.pl",
+    "imagePath": "/public/images/kirsten.pl.png",
+    "imageAlt": "The kirsten.pl homepage",
+    "techStack": ["React", "Next.js", "Tailwind CSS", "Docker"],
+    "year": "2023"
+  },
+  {
+    "name": "agent-sim",
+    "description": "An agent-based simulation of disease spread. I used this mostly as an opportunity to explore a dynamic quadtree to handle collision detection between agents.",
+    "href": "https://github.com/tslnc04/agent-sim",
+    "imagePath": "/public/images/agent_sim.webp",
+    "imageAlt": "agent-sim running in the terminal",
+    "techStack": ["Rust"],
+    "year": "2022"
+  },
+  {
+    "name": "smath-classes",
+    "description": "Unofficial course catalog for the North Carolina School of Science and Mathematics.",
+    "href": "https://github.com/tslnc04/smath-classes",
+    "imagePath": "/public/images/smath_classes.png",
+    "imageAlt": "smath-classes homepage without classes loaded",
+    "techStack": ["JavaScript", "Python"],
+    "year": "2022"
+  },
+  {
+    "name": "Research in ML-based Translation",
+    "description": "Modified transformer model to show improvement in machine translation by using joint part of speech tagging.",
+    "href": "https://docs.google.com/presentation/d/1d4kQMvbibbChr8m0QDW8ZPpK1D_hq7qyLnSneGN_TsQ/edit?usp=sharing",
+    "imagePath": "/public/images/improved_translation.webp",
+    "imageAlt": "Slide discussing Transformer model and changes",
+    "techStack": ["Tensorflow", "NumPy", "Python"],
+    "year": "2021"
+  },
+  {
+    "name": "Covid Wave Predictor",
+    "description": "Made for the 2021 UniHacks hackathon, this project predicts the likelihood of a Covid wave in a given area using a custom neural network.",
+    "href": "https://github.com/tslnc04/covid-wave-predictor",
+    "imagePath": "/public/images/covid_wave_predictor.webp",
+    "imageAlt": "The Covid Wave Predictor homepage, with a map of Covid in the US broken down by county",
+    "techStack": ["Tensorflow", "Python", "d3.js", "TopoJSON"],
+    "year": "2021"
+  }
+]

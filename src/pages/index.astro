@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Project from "../components/Project.astro";
+import projects from "../../public/projects.json";
+
+const links = [
+  {
+    name: "Résumé",
+    href: "https://drive.google.com/file/d/1UQN-JvgAQKE13iXdi4LYdUMPsjskUEKf/view?usp=sharing",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/kirsten-laskoski/",
+  },
+  { name: "GitHub", href: "https://github.com/tslnc04" },
+  { name: "GitLab", href: "https://gitlab.com/tslnc04" },
+  { name: "Email", href: "mailto:kirsten@lasko.ski" },
+];
+---
+
+<Layout>
+  <main class="mx-auto max-w-6xl p-12 pt-6">
+    <h1 class="text-4xl mt-6 font-bold">
+      Hey! I&apos;m <span class="text-fuchsia-600">Kirsten</span>
+    </h1>
+    <p class="mt-4 text-xl">
+      I work as a software quality engineer at Red Hat on the Telco verification
+      team. Previously I was a full stack software engineer at <a
+        href="https://switchframe.ai"
+        class="underline">SwitchFrame</a
+      >.
+    </p>
+    <p class="mt-4 text-xl">
+      I also recently graduated from <a href="https://unc.edu" class="underline"
+        >UNC Chapel Hill</a
+      > with a bachelor&apos;s in mathematics.
+    </p>
+    <section>
+      <h2 class="mb-2 mt-16 text-3xl font-bold">Links</h2>
+      <div
+        class="grid-cols-1 grid gap-x-4 gap-y-2 md:grid-cols-2 lg:grid-cols-3"
+      >
+        {
+          links.map((link) => (
+            <a
+              href={link.href}
+              class="text-md m-2 w-full rounded px-3.5 py-2.5 text-center font-medium text-fuchsia-600 shadow-sm outline outline-2 outline-fuchsia-600 hover:bg-fuchsia-500 hover:text-white"
+            >
+              {link.name}
+            </a>
+          ))
+        }
+      </div>
+    </section>
+    <section>
+      <h2 class="mb-2 mt-16 text-3xl font-bold">Projects</h2>
+      <p class="mt-4 text-xl">
+        These are some of my side projects. I&apos;m pretty bad about finishing
+        them though.
+      </p>
+      <div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project) => <Project {...project} />)}
+      </div>
+    </section>
+  </main>
+</Layout>

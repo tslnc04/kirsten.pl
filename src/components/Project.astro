@@ -1,0 +1,51 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  name: string;
+  description: string;
+  href: string;
+  imagePath: string;
+  imageAlt: string;
+  techStack: string[];
+  year: string;
+}
+
+const { name, description, href, imagePath, imageAlt, techStack, year }: Props =
+  Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/public/images/*.{webp,png}"
+);
+if (!images[imagePath]) {
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "/public/images/*.{webp,png}"`
+  );
+}
+
+const image = images[imagePath]!;
+---
+
+<a
+  href={href}
+  class="group flex flex-col rounded-lg p-4 shadow hover:ring-2 hover:ring-slate-200"
+>
+  <Image
+    src={image()}
+    alt={imageAlt}
+    class="aspect-[16/9] overflow-hidden object-cover"
+  />
+  <h2 class="mt-2 text-2xl font-medium">{name}</h2>
+  <p class="mb-4 mt-2 text-lg">{description}</p>
+  <ul class="mt-auto flex flex-wrap items-center gap-2">
+    <li>{year} &middot;</li>
+    {
+      techStack.map((tech) => (
+        <li class="inline-flex items-center rounded-md bg-slate-100 px-2 py-1 text-sm font-medium text-gray-800">
+          {tech}
+        </li>
+      ))
+    }
+  </ul>
+</a>
