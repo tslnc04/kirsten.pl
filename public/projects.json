@@ -1,11 +1,20 @@
 [
   {
     "name": "Nombrilo",
-    "description": "Generate block distributions for Minecraft worlds. Uses custom serde support for NBT data.",
+    "description": "Generate block distributions for Minecraft worlds. Uses custom serde support for SIMD-accelerated NBT parsing.",
     "href": "https://github.com/tslnc04/nombrilo",
     "imagePath": "/public/images/nombrilo.png",
     "imageAlt": "Nombrilo README on GitHub",
-    "techStack": ["Rust", "serde"],
+    "techStack": ["Rust", "serde", "SIMD"],
+    "year": "2024"
+  },
+  {
+    "name": "kirsten.pl",
+    "description": "This website! Built using Astro and Tailwind CSS, hosted on Cloudflare Pages.",
+    "href": "https://github.com/tslnc04/kirsten.pl",
+    "imagePath": "/public/images/kirsten.pl.png",
+    "imageAlt": "The kirsten.pl homepage",
+    "techStack": ["Astro", "Tailwind CSS", "Cloudflare Pages"],
     "year": "2024"
   },
   {
@@ -15,15 +24,6 @@
     "imagePath": "/public/images/serve.png",
     "imageAlt": "serve README on GitHub",
     "techStack": ["Go", "firewalld"],
-    "year": "2023"
-  },
-  {
-    "name": "kirsten.pl",
-    "description": "This website! Built using Next.js and Tailwind CSS.",
-    "href": "https://github.com/tslnc04/kirsten.pl",
-    "imagePath": "/public/images/kirsten.pl.png",
-    "imageAlt": "The kirsten.pl homepage",
-    "techStack": ["React", "Next.js", "Tailwind CSS", "Docker"],
     "year": "2023"
   },
   {
